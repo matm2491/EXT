@@ -22,8 +22,7 @@ from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin 
 
 
- #para el buscador
-from django.views.generic import TemplateView
+
 
 
 
@@ -82,8 +81,3 @@ class eliminar(DeleteView):
         return reverse('leer')
 
 
-class BuscarView(TemplateView):
-    
-
-    pass
-       

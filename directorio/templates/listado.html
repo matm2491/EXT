@@ -14,24 +14,18 @@
   <thead>
     <tr class="bg-dark">
       
-      <th class="text-light" id="asd">p. nombre</th>
-      <th class="text-light">s. nombre</th>
-      <th class="text-light">p. apellido</th>
-      <th class="text-light">s. apellido</th> 
+      <th class="text-light" id="asd">nombres</th>
       <th class="text-light">cargo</th>
       <th class="text-light">Departamento</th> 
       <th class="text-light">extension</th> 
-      <th class="text-light">tlf local</th> 
+      <th class="text-light"> local</th> 
       <th class="text-light">Acciones</th>
     </tr>
   </thead>
   <tbody>
       {% for TinUsuarios in object_list %}
       <tr>
-          <td>{{ TinUsuarios.primer_nombre }}</td>
-          <td>{{ TinUsuarios.segundo_nombre }}</td>
-          <td>{{ TinUsuarios.primer_apellido }}</td>
-          <td>{{ TinUsuarios.segundo_apellido }}</td>
+          <td>{{ TinUsuarios.primer_nombre }} {{ TinUsuarios.segundo_nombre }} {{ TinUsuarios.primer_apellido }} {{ TinUsuarios.segundo_apellido }}</td>
           <td>{{ TinUsuarios.descripcion_cargo }}</td>
           <td>{{ TinUsuarios.dependencia_id }}</td>
           <td>{{ TinUsuarios.tlf_extension }}</td>

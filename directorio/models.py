@@ -4,6 +4,9 @@ from django.db import models
 
 class TinDependencias(models.Model):
     dependencia_id = models.IntegerField(unique=True, blank=True, null=True)
+    padre_id = models.IntegerField(blank=True, null=True)
+    padre_funcional_id = models.IntegerField(blank=True, null=True)
+    acronimo = models.CharField(max_length=15, blank=True, null=True)
     descripcion = models.CharField(max_length=150, blank=True, null=True)
     localidad = models.CharField(max_length=1, blank=True, null=True)
     nivel = models.IntegerField(blank=True, null=True)

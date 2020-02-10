@@ -1,5 +1,5 @@
 from django.urls import path
-from directorio.views import listado, crear, editar, ver, eliminar, BuscarView
+from directorio.views import listado, crear, editar, ver, eliminar
 from . import views
 
 
@@ -13,5 +13,4 @@ urlpatterns = [
     path('editar/<int:pk>', editar.as_view(template_name = "editar.html"),name='editar'),
     path('ver/<int:pk>', ver.as_view(template_name = "ver.html"), name='ver'),  
     path('eliminar/<int:pk>', eliminar.as_view(), name='eliminar'),  
-    path('buscar', BuscarView.as_view(), name='buscar')
 ]
