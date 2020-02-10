@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+{% load widget_tweaks %}
+
+
+<div class="offset-md-1">
+    <form method="post" enctype="multipart/form-data">
+    
+      
+      {% csrf_token %}
+      
+     
+      
+      <div class="form-group offset-md-1">
+          <label for="Primer nombre" class="txt_negrita">Primer nombre</label>
+          {% render_field form.primer_nombre class="form-control col-12" placeholder=form.primer_nombre.label %}
+        </div>
+      
+        
+      <div class="form-group offset-md-1">
+          <label for="Segundo Nombre" class="txt_negrita">Segundo Nombre</label>
+          {% render_field form.segundo_nombre class="form-control col-12" placeholder=form.segundo_nombre.label %} 
+        </div>
+
+      <div class="form-group offset-md-1">
+        <label for="primer apellido" class="txt_negrita">primer apellido</label>
+        {% render_field form.primer_apellido class="form-control col-12" placeholder=form.primer_apellido.label %} 
+      </div>
+
+      <div class="form-group offset-md-1">
+        <label for="primer apellido" class="txt_negrita">segundo apellido</label>
+        {% render_field form.segundo_apellido class="form-control col-12" placeholder=form.segundo_apellido.label %} 
+      </div>
+
+      <div class="form-group offset-md-1">
+        <label for="primer apellido" class="txt_negrita">departamento</label>
+        {% render_field form.des_tipo_personal class="form-control col-12" placeholder=form.des_tipo_personal.label %} 
+      </div>
+
+      <div class="form-group offset-md-1">
+        <label for="primer apellido" class="txt_negrita">cargo</label>
+        {% render_field form.descripcion_cargo class="form-control col-12" placeholder=form.descripcion_cargo.label %} 
+      </div>
+
+
+      <div class="form-group offset-md-1">
+        <label for="primer apellido" class="txt_negrita">extencion</label>
+        {% render_field form.tlf_extension class="form-control col-12" placeholder=form.tlf_extension.label %} 
+      </div>
+
+      <div class="form-group offset-md-1">
+        <label for="primer apellido" class="txt_negrita">local</label>
+        {% render_field form.tlf_personal class="form-control col-12" placeholder=form.tlf_personal.label %} 
+      </div>
+
+
+      <div style="margin-top: 30px;"></div>
+        <button type="submit" class="btn btn-primary offset-md-3 col-md-2">Aceptar</button>
+        <a href="{% url 'leer' %}"  class="btn btn-danger offset-md-2 col-md-2">Volver</a>
+        
+      </div>
+    </form>
+</div>
+
+{% endblock %}

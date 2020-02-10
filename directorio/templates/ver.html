@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+
+
+
+{% block content %}
+
+
+<table id="table" class="table table-striped table-hover ">
+    <thead>
+    <tr>
+
+        <th class="txt_negrita">nombre</th>
+        <th class="txt_negrita">apellido</th>
+        <th class="txt_negrita">departamento</th>
+        <th class="txt_negrita">extension</th>
+        <th class="txt_negrita">local</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td class="txt_negrita">{{object.primer_nombre}}</td>
+        <td class="txt_negrita">{{object.primer_apellido}}</td>
+        <td class="txt_negrita">{{object.descripcion_cargo}}</th>
+        <td class="txt_negrita">{{object.tlf_extension}}</td>
+        <td class="txt_negrita">{{object.tlf_personal}}</td>
+        <td><a href="{% url 'leer' %}" type="submit" class="btn btn-danger">Volver</a></td>
+    </tr>
+    </tbody>
+</table>
+
+{% endblock %}
