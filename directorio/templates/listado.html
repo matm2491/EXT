@@ -45,11 +45,8 @@
 
 <script>
     $(document).ready( function () {
-      $('#table_1').DataTable();
-      lenguage: idioma
-    } );
-
-    var idioma = {
+      $('#table_1').DataTable({
+        "language":  {
         "sProcessing":     "Procesando...",
                     "sLengthMenu":     "Mostrar _MENU_ registros",
                     "sZeroRecords":    "No se encontraron resultados",
@@ -77,6 +74,12 @@
                         "colvis": "Visibilidad"
                     }
 }
+
+      });
+      
+    } );
+
+   
 </script>
 
 {% endblock %}
