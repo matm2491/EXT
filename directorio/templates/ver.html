@@ -10,19 +10,19 @@
     <thead>
     <tr>
 
-        <th class="txt_negrita">nombre</th>
-        <th class="txt_negrita">apellido</th>
-        <th class="txt_negrita">departamento</th>
-        <th class="txt_negrita">extension</th>
-        <th class="txt_negrita">local</th>
+        <th class="txt_negrita">Nombres</th>
+        <th class="txt_negrita">Cargo</th>
+        <th class="txt_negrita">Direccion</th>
+        <th class="txt_negrita">Extension</th>
+        <th class="txt_negrita">Local</th>
 
     </tr>
     </thead>
     <tbody>
     <tr>
-        <td class="txt_negrita">{{object.primer_nombre}}</td>
-        <td class="txt_negrita">{{object.primer_apellido}}</td>
+        <td class="txt_negrita">{{object.primer_nombre}} {{object.primer_apellido}}</td>
         <td class="txt_negrita">{{object.descripcion_cargo}}</th>
+        <td class="txt_negrita">{{object.dependencia_id }}</td>
         <td class="txt_negrita">{{object.tlf_extension}}</td>
         <td class="txt_negrita">{{object.tlf_personal}}</td>
         <td><a href="{% url 'leer' %}" type="submit" class="btn btn-danger">Volver</a></td>
