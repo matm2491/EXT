@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 
  #app de mi proyecto
     'directorio',   
+    'direccion',
 ]
 
 MIDDLEWARE = [
@@ -83,11 +84,11 @@ WSGI_APPLICATION = 'sisextdp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'directorio2',
-        'USER': 'postgres',
-        'PASSWORD':123,
-        'HOST':'localhost',
-        'port':'5432',
+        'NAME': 'intranet',
+        'USER': 'sisdesa',
+        'PASSWORD':'12qwaszx',
+        'HOST':'huachamacare',
+        'port':'5433',
     }
 
 

@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import TinUsuarios
+from .models import TinUsuarios, TinDependencias
 
 
 
@@ -15,3 +15,5 @@ class FuncionariosAdmin(admin.ModelAdmin):
 
 
 admin.site.register(TinUsuarios, FuncionariosAdmin)
+
+admin.site.register(TinDependencias)
