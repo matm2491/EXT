@@ -1,17 +1,20 @@
+body {
+    font-family: Times;
+}
 #div1 {
     background: #ffffff;
+    margin-top: 2%;  padding: 20px; border-radius: 10px; box-shadow: 0px 0px 20px 5px rgb(0, 0, 0)
     
 }
 
 #b1 {
-
-    
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    
-   
+    background: rgba(109,0,25,1);
+    background: -moz-linear-gradient(left, rgba(109,0,25,1) 0%, rgba(143,2,34,1) 56%, rgba(169,3,41,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(109,0,25,1)), color-stop(56%, rgba(143,2,34,1)), color-stop(100%, rgba(169,3,41,1)));
+    background: -webkit-linear-gradient(left, rgba(109,0,25,1) 0%, rgba(143,2,34,1) 56%, rgba(169,3,41,1) 100%);
+    background: -o-linear-gradient(left, rgba(109,0,25,1) 0%, rgba(143,2,34,1) 56%, rgba(169,3,41,1) 100%);
+    background: -ms-linear-gradient(left, rgba(109,0,25,1) 0%, rgba(143,2,34,1) 56%, rgba(169,3,41,1) 100%);
+    background: linear-gradient(to right, rgba(109,0,25,1) 0%, rgba(143,2,34,1) 56%, rgba(169,3,41,1) 100%);
 }
 
 
@@ -67,4 +70,9 @@
     padding: 30px;
     margin: 10px 0 10px 10px !important;
 
+}
+
+footer {
+    text-align: center;
+    color: white;
 }
