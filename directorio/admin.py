@@ -14,6 +14,8 @@ class FuncionariosAdmin(admin.ModelAdmin):
 
 
 
+
+
 admin.site.register(TinUsuarios, FuncionariosAdmin)
 
 admin.site.register(TinDependencias)

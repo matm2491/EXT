@@ -47,8 +47,8 @@ class listado(ListView):
     model = TinDependencias
     model = TinUsuarios
    
-    
 
+        
 class crear(SuccessMessageMixin, CreateView):
     model = TinUsuarios
     form = TinUsuarios

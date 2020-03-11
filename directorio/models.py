@@ -3,6 +3,7 @@ from direccion.models import TinDependencias
 # importo los modelos de la base de datos de postgres ya creados buscandolos con el comando (manage.py inspectdb)
 
 
+
 class TinUsuarios(models.Model):    
     primer_nombre = models.CharField(max_length=30, blank=True, null=True)
     dependencia_id = models.IntegerField(blank=True, null=True)
@@ -15,6 +16,8 @@ class TinUsuarios(models.Model):
     direccion = models.CharField(max_length=100, blank=True, null=True)
     tlf_extension = models.CharField(max_length=20, blank=True, null=True)
 
+
+    
 
     #para que me muestre primer nombre y priemr apellido en el admin de django
 
